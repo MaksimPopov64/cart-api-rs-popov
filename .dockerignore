@@ -1,0 +1,11 @@
+#cause it creating after building
+dist
+
+#no need for them cause there is npm install
+node_modules
+
+# Serverless directories
+.serverless
+
+
+.elasticbeanstalk
