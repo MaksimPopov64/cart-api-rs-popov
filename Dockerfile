@@ -1,4 +1,4 @@
-FROM node:14.3.7 as build_image
+FROM node:12.16.3 as build_image
 
 WORKDIR /usr/src/app
 
@@ -10,7 +10,7 @@ COPY ./src ./src
 RUN npm run build
 RUN npm prune --production
 
-FROM node:14.3.7-alpine
+FROM node:12.16.3-alpine
 
 WORKDIR /app
 
